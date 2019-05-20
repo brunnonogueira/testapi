@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('STAGE 00'){
+        stage('STAGE 00 - build package'){
             steps{
-                echo "Pipeline Usando Jenkinsfile"
+                sh 'mvn package'
             }
         }
 
